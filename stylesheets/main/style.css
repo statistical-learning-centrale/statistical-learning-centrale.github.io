@@ -9,6 +9,53 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.course-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.course-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.course-logo {
+  height: 50px;
+  width: auto;
+}
+
+.course-subtitle {
+  margin: 0 0 10px;
+  color: #555;
+}
+
+.course-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.course-nav > li {
+  float: none;
+}
+
+.course-nav > li > a {
+  padding: 6px 10px;
+}
+
+.sechighlight {
+  border-top: 1px solid rgba(0,0,0,0.04);
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.table-responsive {
+  border: 0;
+}
 #teaser {
   height: 410px;
   padding-top: 20px;

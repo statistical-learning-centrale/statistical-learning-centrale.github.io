@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Master 2 — Sparsity and High Dimensions</title>
+  <meta name="description" content="Master 2 course on sparsity, convex optimization, and high-dimensional statistics: schedule, bibliography, projects, exams." />
 
 
-  <!-- Google Analytics -->
   <!-- bootstrap -->
   <link rel="stylesheet" href="./stylesheets/main/bootstrap.min.css">
   <link rel="stylesheet" href="./stylesheets/main/bootstrap-theme.min.css">
@@ -13,23 +16,34 @@
   <!-- Google fonts -->
   <link href="./stylesheets/main/css" rel="stylesheet" type="text/css">
 
-  <style type="text/css"></style>
-
   <link rel="stylesheet" type="text/css" href="./stylesheets/main/style.css">
 
 </head>
 
-<body onload="page_loaded()">
+<body>
 
-<div id="header">
-  <a href="http://math.univ-lyon1.fr//">
-    <img src="./stylesheets/main/icj.png" style="height:50px; float: left; margin-left: 20px;">
-  </a>
-  <a href="https://www.ec-lyon.fr/">
-    <img src="./stylesheets/main/ecl.png" style="height:50px; float: right; margin-right: 20px;">
-  </a>
-    <h1>Master 2, Sparsity and High Dimension</h1>
-  <div style="clear:both;"></div>
+<div class="container sec">
+  <div class="course-header">
+    <div class="course-logos">
+      <a href="https://math.univ-lyon1.fr/" aria-label="Université Claude Bernard Lyon 1">
+        <img src="./stylesheets/main/icj.png" class="course-logo" alt="Université Claude Bernard Lyon 1">
+      </a>
+      <a href="https://www.ec-lyon.fr/" aria-label="École Centrale de Lyon">
+        <img src="./stylesheets/main/ecl.png" class="course-logo" alt="École Centrale de Lyon">
+      </a>
+    </div>
+    <h1>Master 2 — Sparsity and High Dimensions</h1>
+    <p class="course-subtitle">Winter quarter (January–March 2026) · École Centrale Lyon · Monday 2:00–5:15pm</p>
+    <ul class="nav nav-pills course-nav">
+      <li role="presentation"><a href="#description">Description</a></li>
+      <li role="presentation"><a href="#bibliography">Bibliography</a></li>
+      <li role="presentation"><a href="#organizers">Organizers</a></li>
+      <li role="presentation"><a href="#projects">Projects</a></li>
+      <li role="presentation"><a href="#exams">Exams</a></li>
+      <li role="presentation"><a href="#schedule">Schedule</a></li>
+      <li role="presentation"><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 </div>
 
 <!-- <div class="sechighlight">-->
@@ -40,20 +54,19 @@
 <!-- </div>-->
 
 
-<div class="sechighlight">
+<div class="sechighlight" id="description">
   <div class="container sec">
     <h2>Course Description</h2>
 
     <div id="coursedesc">
-      Sparsity and convexity are ubiquitous concepts in Machine Learning and Statistics.
+      Sparsity and convexity are ubiquitous concepts in machine learning and statistics.
       In this course, we study the mathematical foundations of powerful methods based on convex relaxation, such as L1-regularization techniques in Statistics and Signal Processing.
       The theoretical part of the course focuses on the performance guarantees of these algorithms under the sparsity assumption.
       The practical part presents standard solvers for these learning problems.
       <!-- Keywords: L1-regularisation; Proximal methods; -->
  </div>
-    <br>
 
-   <h2>Bibliography</h2>
+    <h2 id="bibliography">Bibliography</h2>
    <div>
    <ul>
 
@@ -64,7 +77,7 @@
        <b>[Bubeck] </b> <a href="https://arxiv.org/abs/1405.4980">Convex Optimization: Algorithms and Complexity</a>, Sébastien Bubeck, Foundations and Trends in Machine Learning.
      </li>
      <li>
-      <b>[blondel]</b> <a href="https://arxiv.org/abs/2403.14606">The Elements of Differentiable Learning</a>, Mathieu Blondel and Vincent Roulet.
+       <b>[Blondel]</b> <a href="https://arxiv.org/abs/2403.14606">The Elements of Differentiable Learning</a>, Mathieu Blondel and Vincent Roulet.
      </li>
      <li>
        <b>[Wainwright] </b> High-Dimensional Statistics: A Non-Asymptotic Viewpoint, Martin J. Wainwright, Cambridge University Press
@@ -77,36 +90,39 @@
     </li>
    </ul>
    </div>
-</div>
+  </div>
 </div>
 
 <div class="container sec">
-  <div class="row">
-    <div> <!-- class="col-md-4">-->
+  <div class="row" id="organizers">
+    <div class="col-md-5">
       <h2>Course Organizers</h2>
       <div class="instructor">
         <a href="https://ydecastro.github.io/">
-        <div class="instructorphoto"><img src="./stylesheets/main/yohann.png"></div>
-        <div>Yohann <br>De Castro</div>
+          <div class="instructorphoto"><img src="./stylesheets/main/yohann.png" alt="Yohann De Castro"></div>
+          <div>Yohann<br>De Castro</div>
         </a>
       </div>
       <div class="instructor">
         <a href="https://people.irisa.fr/Remi.Gribonval/">
-      <div class="instructorphoto"><img src="./stylesheets/main/remi.png"></div>
-        <div>Rémi <br>Gribonval</div>
+          <div class="instructorphoto"><img src="./stylesheets/main/remi.png" alt="Rémi Gribonval"></div>
+          <div>Rémi<br>Gribonval</div>
         </a>
       </div>
+    </div>
 
-      <h3> Projects </h3>
-      The guidelines can be found in <a href="./doc/projects.pdf">this document</a>.
-      <!-- Please send an email to both lecturers with your group (4 names) and your ordered list of three subjects for the 28th of Jannuary.-->
-      <b>Please send a list of 3 [ref paper] with your {names} by email to Rémi and Yohann.</b>
+    <div class="col-md-7" id="projects">
+      <h2>Projects</h2>
+      <p>
+        Guidelines: <a href="./doc/projects.pdf">projects.pdf</a>.
+        <br>
+        <strong>Please email Rémi and Yohann your group names and 3 ranked reference papers.</strong>
+      </p>
 
-      <div id="col-md-6">
-        Based on the references:
-        <ul>
+      <p>Suggested references:</p>
+      <ul>
           <li><b>[SR-Lasso]</b> C. Poon and G. Peyré, "Super-Resolved Lasso". <a href="https://arxiv.org/abs/2311.09928">link</a></li>
-          <li><b>[Prox-P&P]</b> S. Hurault, A. Leclaire, and N. Papadakis, "Proximal Denoiser for Convergent Plug-and-Play Optimization with Nonconvex Regularization". <a href="https://arxiv.org/abs/2201.13256">link</a></li>
+          <li><b>[Prox-P&amp;P]</b> S. Hurault, A. Leclaire, and N. Papadakis, "Proximal Denoiser for Convergent Plug-and-Play Optimization with Nonconvex Regularization". <a href="https://arxiv.org/abs/2201.13256">link</a></li>
           <li><b>[Gap Safe]</b> E. Ndiaye, O. Fercoq, A. Gramfort, and J. Salmon, “Gap Safe Screening Rules for Sparsity Enforcing Penalties”, <i>J. Mach. Learn. Res.</i>, 2017. <a href="https://arxiv.org/abs/1611.05780">link</a>
           </li>
           <li><b>[Low-Rank NSP]</b> M. Kabanava, R. Kueng, and H. Rauhut, “Stable low-rank matrix recovery via null space properties,” <i>Information and Inference</i>, vol. 5, no. 4, pp. 405–441, 2016.
@@ -115,8 +131,8 @@
           <li><b>[FW]</b> Q. Denoyelle, V. Duval, G. Peyré, and E. Soubies, “The sliding Frank–Wolfe algorithm and its application to super-resolution microscopy,” <i>Inverse problems</i>, vol. 36, no. 1, p. 014001, Jan. 2020.
           <a href="https://arxiv.org/abs/1811.06416">link</a>
           </li>
-          <li><b>[Rep.IR]</b> Mairal, J., Elad, M., & Sapiro, G. (2008). Sparse Representation for Color Image Restoration. <i>IEEE Transactions on Image Processing</i>, 17(1), 53–69. <a href="http://doi.org/10.1109/tip.2007.911828">doi:10.1109/tip.2007.911828</a></li>
-          <li><b>[Group]</b> Jacob, L., Obozinski, G., & Vert, J. P. (2009, June). Group lasso with overlap and graph lasso. In <i>Proceedings of the 26th annual international conference on machine learning</i> (pp. 433-440). <a href="http://members.cbio.mines-paristech.fr/~ljacob/documents/overlasso.pdf">pdf</a></li>
+          <li><b>[Rep.IR]</b> Mairal, J., Elad, M., &amp; Sapiro, G. (2008). Sparse Representation for Color Image Restoration. <i>IEEE Transactions on Image Processing</i>, 17(1), 53–69. <a href="http://doi.org/10.1109/tip.2007.911828">doi:10.1109/tip.2007.911828</a></li>
+          <li><b>[Group]</b> Jacob, L., Obozinski, G., &amp; Vert, J. P. (2009, June). Group lasso with overlap and graph lasso. In <i>Proceedings of the 26th annual international conference on machine learning</i> (pp. 433-440). <a href="http://members.cbio.mines-paristech.fr/~ljacob/documents/overlasso.pdf">pdf</a></li>
           <li><b>[Sketch]</b> Two papers on Sketching:<br>
             Antoine Chatalic, Rémi Gribonval, Nicolas Keriven. "Large-Scale High-Dimensional Clustering with Fast Sketching". In <i>ICASSP</i>, 2018. <br>
             Rémi Gribonval, Antoine Chatalic, Nicolas Keriven, Vincent Schellekens, Laurent Jacques, Philip Schniter. "Sketching Datasets for Large-Scale Learning (long version)". <i>arXiv preprint arXiv:2008.01839</i>.
@@ -124,20 +140,20 @@
           <li><b>[Gen-Langevin]</b> T. V. Nguyen, G. Jagatap, and C. Hegde, "Provable Compressed Sensing with Generative Priors via Langevin Dynamics", <i>IEEE Transactions on Information Theory</i>, vol. 68, no. 11, pp. 7410–7422, 2022. <a href="https://arxiv.org/abs/2102.12643">link</a></li>
           <li><b>[Implicit Bias]</b> C. You, Z. Zhu, Q. Qu, and Y. Ma, "Robust Recovery via Implicit Bias of Discrepant Learning Rates", <i>Advances in Neural Information Processing Systems (NeurIPS)</i>, 2020. <a href="https://arxiv.org/abs/2006.08857">link</a></li>
           <li><b>[Sparse iOT]</b> F. Andrade, G. Peyré, and C. Poon, "Sparsistency for Inverse Optimal Transport", <i>International Conference on Learning Representations (ICLR)</i>, 2024. <a href="https://arxiv.org/abs/2310.05461">link</a></li>
-        </ul>
-      </div>
-      </div>
+      </ul>
+    </div>
   </div>
 </div>
 
-<div class="sechighlight">
+<div class="sechighlight" id="exams">
   <div class="container sec">
-        <h2>Past exams</h2>
-<td><a href="./doc/Examen_Pb_Inverses_2022_2023.pdf">2023_exam</a></td>
-<br>
-<td><a href="./doc/2025_exam_m2_parcimonie.pdf">2025_exam</a></td>
+    <h2>Past exams</h2>
+    <ul>
+      <li><a href="./doc/Examen_Pb_Inverses_2022_2023.pdf">2023 exam</a></li>
+      <li><a href="./doc/2025_exam_m2_parcimonie.pdf">2025 exam</a></li>
+    </ul>
 
-	<h2>Clarifications (for ECL only)</h2>
+	<h2>Clarifications (ECL only)</h2>
 Nous proposons deux cours de niveau Master : « Optimisation et Représentation Parcimonieuse » (ORP/Master) et « Parcimonie et Grande Dimension » (PGD/Master), ainsi qu'un cours de 3<sup>e</sup> année Centrale « Parcimonie et Grande Dimension » (PGD/Option). Ces enseignements sont tous identifiés par le code <b>I_G_S09_FO_MIR3_1</b> sur le portail de la scolarité. Le planning ci-dessous présente les cours de master. En cas de doute, les informations du portail officiel font foi.<br>
 
 <br>
@@ -158,7 +174,7 @@ Les centraliens en Master GRAF auront une note GRAF = (Exam1+Projets)/2<br>
 
 <br>
 
-On a donc un seul cours, le cours PGD, aux publics et notes différentiés. <br>
+On a donc un seul cours, le cours PGD, aux publics et notes différenciés. <br>
 
 <br>
 
@@ -169,49 +185,38 @@ Pour EXAM2, seuls les centraliens sont convoqués.
   </div>
 </div>
 
-<div class="container sec">
-  <div class="row">
-    <div class="col-md-6">
-      <h2>Class Time and Location</h2>
-      Winter quarter (January - March, 2026).<br> Lecture: Monday afternoon 2:00-5:15<br>
-      Ecole Centrale Lyon
-    </div>
-    <div class="col-md-4">
-      <h2>Contact Info</h2>
-      Yohann: yohann.de-castro@ec-lyon.fr<br>
-      Rémi: remi.gribonval@inria.fr <br>
-    </div>
-  </div>
-</div>
-
-<body>
-
-</div>
-
-<div class="sechighlight">
- <div class="container sec">
-  <table class="table">
-    <tbody>
-      <tr class="active">
-        <th>Students involved</th><th>Date and time</th><th>Lecturer</th><th>Description</th><th>Materials and references</th>
-      </tr>
+<div class="sechighlight" id="schedule">
+  <div class="container sec">
+    <h2>Schedule</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr class="active">
+            <th scope="col">Students</th>
+            <th scope="col">Date &amp; time</th>
+            <th scope="col">Lecturer</th>
+            <th scope="col">Type</th>
+            <th scope="col">Materials / location</th>
+          </tr>
+        </thead>
+        <tbody>
       <tr>
-        <td> <br>-> Full group</td>
-        <td>Jan., 26 <br>(2-5pm)</td>
+        <td>All students</td>
+        <td>Jan 26 (2–5pm)</td>
         <td>Yohann</td>
         <td>Lecture 1</td>
         <td> <b>SALLE 19, W1bis building</b> </td>
       </tr>
       <tr>
-        <td> <br>-> Full group</td>
-        <td>Feb., 02 <br>(2-5pm)</td>
+        <td>All students</td>
+        <td>Feb 02 (2–5pm)</td>
         <td>Yohann</td>
         <td>Lecture 2</td>
         <td> <b>AMPHI 203, W1 building</b> </td>
       </tr>
       <tr>
-        <td><br>-> Full group</td>
-        <td>Feb., 09 <br>(2-5pm)</td>
+        <td>All students</td>
+        <td>Feb 09 (2–5pm)</td>
         <td>Rémi</td>
         <td>Lecture 3</td>
         <td>
@@ -219,8 +224,8 @@ Pour EXAM2, seuls les centraliens sont convoqués.
         </td>
       </tr>
   <tr>
-    <td><br>-> Full group</td>
-    <td>Feb., 23 <br>(2-5pm)</td>
+    <td>All students</td>
+    <td>Feb 23 (2–5pm)</td>
     <td>Rémi</td>
     <td>Lecture 4</td>
     <td><b>AMPHI 203, W1 building</b></td>
@@ -243,46 +248,54 @@ Pour EXAM2, seuls les centraliens sont convoqués.
     <td></td>
   </tr> -->
   <tr>
-    <td> <br>-> Full group<br></td>
-    <td>Mar., 02 <br>(2-5pm)</td>
+    <td>All students</td>
+    <td>Mar 02 (2–5pm)</td>
     <td>Rémi</td>
     <td>Lecture 5</td>
-    <td> <b> AMPHI 203, W1 building</b></td>
+    <td><b>AMPHI 203, W1 building</b></td>
       <!-- <b>[Foucart] </b>
       <a href="./notes/Cours ATL 4.pdf">Notes</a> + <a href="./notes/RIP.pdf">[RMT RIP]</a> + <a href="./notes/Lower Bound.pdf">[Lower Bound]</a> -->
       <!-- <a href="https://www.dropbox.com/s/aqhp69t1cihg4ci/lecture4.mp4?dl=1">Video</a> -->
   </tr>
-  <!-- <tr>
-    <td> <br>-> Centrale Only</td>
-    <td>March, 10 <br>(2-5pm)</td>
-    <td>Yohann</td>
-    <td>Course on optimization</td>
-    <td><b>SALLE 103</b></td>
-  </tr> -->
   <tr>
-    <td> <br>-> Full group</td>
-    <td>March, 16 <br>(2-5pm)</td>
-    <td>Examinators: Remi and Yohann</td>
+    <td>All students</td>
+    <td>Mar 16 (2–5pm)</td>
+    <td>Rémi &amp; Yohann</td>
     <td>Projects</td>
     <td><a href="./doc/projects.pdf">Guidelines</a><br><b>SALLE 112, W1bis building</b></td>
   </tr>
   <tr>
-    <td> <br>-> Full group</td>
-    <td>TBA <br>(TBA)</td>
-    <td>Examinator: ECL's agent </td>
-    <td>Exam1</td>
+    <td>All students</td>
+    <td>TBA</td>
+    <td>ECL</td>
+    <td>Exam 1</td>
     <td></td>
   </tr>
-</tbody></table>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
+
+<div class="container sec" id="contact">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Class time and location</h2>
+      Winter quarter (January–March 2026).<br>
+      Lecture: Monday 2:00–5:15pm.<br>
+      École Centrale Lyon.
+    </div>
+    <div class="col-md-6">
+      <h2>Contact</h2>
+      Yohann: <a href="mailto:yohann.de-castro@ec-lyon.fr">yohann.de-castro@ec-lyon.fr</a><br>
+      Rémi: <a href="mailto:remi.gribonval@inria.fr">remi.gribonval@inria.fr</a>
+    </div>
+  </div>
 </div>
 
 <!-- jQuery and Boostrap -->
-<script src="./stylesheets/jquery.min.js"></script>
-<script src="./stylesheets/bootstrap.min.js"></script>
+<script src="./stylesheets/main/jquery.min.js"></script>
+<script src="./stylesheets/main/bootstrap.min.js"></script>
 
-
-
-</body></html>
-  </body>
+</body>
 </html>
