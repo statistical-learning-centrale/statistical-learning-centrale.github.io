@@ -174,7 +174,7 @@ h2 {
   background-color: #f7f6f1;
 }
 #coursedesc {
-  text-align: justify;
+  text-align: left;
 }
 #footermsg {
   color: #333;
@@ -184,4 +184,9 @@ h2 {
   position: absolute;
   bottom: 20px;
   right: 20px;
+}
+/* Schedule: let the cells wrap so that the table fits on a phone. */
+.schedule-table th,
+.schedule-table td {
+  white-space: normal !important;
 }
